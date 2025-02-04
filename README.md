@@ -6,7 +6,7 @@
 | Integrante     | Descrição     |
 |----------------|----------------|
 
-| <img src="src/img/squad/clean.jpg" alt="Clean Rodrigo Costa" width="150"/> | Clean Rodrigo Costa, 29 anos, Santa Maria-RS Estudante FullStack - RECODE |
+| <img src="src/img/clean.jpg" alt="Clean Rodrigo Costa" width="150"/> | Clean Rodrigo Costa, 29 anos, Santa Maria-RS Estudante FullStack - RECODE |
 
 
 ## ✔️ PROJETO | SOLUÇÃO 
