@@ -2,7 +2,7 @@
 
 /* CABECALHO */
 .navbar {
-    background-color: #ffffff3b; /* Fundo transparente */
+    background-color: rgba(136, 133, 133, 0.774); /* Fundo transparente */
   }
   .carousel-container {
     max-height: 700px; /* Ajuste o tamanho conforme necessário */
@@ -81,8 +81,8 @@
   transform: scale(1.5); /* Aumenta o botão em 20% */
 }
 .navbar-brand img {
-  width: 100x;
-  height: 100px;
+  width: 75px;
+  height: 50px;
   transition: transform 0.8s ease;
   border-radius: 20px;
 
@@ -126,9 +126,9 @@
 
 .navbar-nav .nav-link {
   color: #FFA500; /* Cor destacada */
-  text-shadow: 1px 1px 5px rgb(228, 228, 228); /* Sombra */
+  text-shadow: 4px 4px 10px #000000; /* Sombra */
   transition: color 0.3s ease, text-shadow 0.3s ease, text-decoration 0.3s ease; /* Suavidade nos efeitos */
-  font-size: 25px; /* Tamanho da fonte aumentado */
+  font-size: 18px; /* Tamanho da fonte aumentado */
   font-family: 'Roboto', sans-serif; /* Fonte Roboto do Google Fonts */
   font-weight: bold; /* Negrito */
 }
