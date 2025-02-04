@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaBello</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="corpo" style="background: linear-gradient(to bottom right, hsla(197, 100%, 50%, 0.932), #343a40);">
+
+    <!-- Navbar -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top"><br><br><br><br><br>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="src/img/logo2.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes-personalizadas">Promoções</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Destinos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#nacionais">Nacionais</a></li>
+                                <li><a class="dropdown-item" href="#internacionais">Internacionais</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#historica">Históricas e culturais</a></li>
+                                <li><a class="dropdown-item" href="#maritima">Marítimas</a></li>
+                                <li><a class="dropdown-item" href="#fauna">Fauna e Natureza</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cruzeiro">Cruzeiros</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex flex-column" role="search" id="loginForm">
+                        <button class="btn btn-highlight" type="button" id="loginButton">Login</button>
+                        <div class="login-fields" id="loginFields" style="display: none;">
+                            <input type="text" class="form-control mb-2" placeholder="Usuário" aria-label="Usuário"
+                                id="username">
+                            <input type="password" class="form-control mb-2" placeholder="Senha" aria-label="Senha"
+                                id="password">
+                            <button class="btn btn-outline-success" type="submit" form="loginForm">Entrar</button>
+                            <button class="btn btn-outline-success" type="submit" form="loginForm">CADASTRAR</button>
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carrossel -->
+        <!-- Banner Principal -->
+
+        <div id="mainCarousel" class="carousel slide carousel-container" data-bs-ride="carousel"
+            data-bs-interval="2000">
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/img/eifel.jpg" class="d-block w-100" alt="Paris">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">"ViaBello - Agência de viagens:
+                            Encontre
+                            Seu Destino Ideal Aqui"<br><br><br><br><br>Paris
+                        </h1>
+                        <h3 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">A Cidade das Luzes e do Amor</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/grecia.jpg" class="d-block w-100" alt="Grécia">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">"ViaBello - Agência de viagens :
+                            Encontre
+                            Seu Destino Ideal Aqui"<br><br><br><br><br></r>Grécia</h1>
+                        <h3 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Um tesouro histórico e cultural</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/londres.jpg" class="d-block w-100" alt="Londres">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">"ViaBello - Agência de viagens :
+                            Encontre
+                            Seu Destino Ideal Aqui"<br><br><br><br><br>Londres</h1>
+                        <h3 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Uma Cidade de História e Inovação</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <br><br><br><br><br><br><br><br><br>
+
+
+    <main>
+
+        <figure class="figure" style="position: relative; display: flex; justify-content: center;">
+            <a href="#nacionais" class="link-wrapper">
+                <img src="src/img/nacionais.jpg" class="figure-img img-fluid rounded hover-effect"
+                    style="height: 400px; width: 100vh;" alt="...">
+                <div class="overlay">Viagens Nacionais</div>
+            </a>
+            <figcaption class="figure-caption" style="text-align: center;"></figcaption>
+        </figure>
+
+
+        <figure class="figure" style="position: relative; display: flex; justify-content: center;">
+            <a href="#internacionais" class="link-wrapper">
+                <img src="src/img/veneza.jpg" class="figure-img img-fluid rounded hover-effect"
+                    style="height: 400px; width: 100vh;" alt="...">
+                <div class="overlay">Viagens Internacionais</div>
+            </a>
+            <figcaption class="figure-caption" style="text-align: center;"></figcaption>
+        </figure>
+
+
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section class="cards">
+            <div id="historica" style="text-align: center; margin-top: 20px;">
+                <h1
+                    style="color: #FFA500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Roboto', sans-serif; font-weight: bold;">
+                    "Conheça lugares Históricos e Culturais"
+                </h1><br>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <!-- Card 1: Acrópole de Atenas, Grécia -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div id="carouselAcrópole" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="src/img/card-acropole/imagem1.jpg" class=" w-100"
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="src/img/card-acropole/imagem2.jpg" class=" w-100 "
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="src/img/card-acropole/imagem3.jpg" class=" w-100 "
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselAcrópole" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselAcrópole" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Acrópole de Atenas, Grécia</h5>
+                                    <p class="card-text">
+                                        <b>Descrição:</b> Acrópole de Atenas é um dos locais mais icônicos do mundo,
+                                        famoso
+                                        por seus templos antigos, especialmente o Partenon. A vista da cidade de Atenas
+                                        a
+                                        partir da Acrópole é deslumbrante e oferece uma visão única da história da
+                                        civilização ocidental.
+                                    </p>
+                                    <br>
+                                    <p><b>Valor:</b> R$ 1.500 por pessoa (passagem de ida e volta, hospedagem de 5
+                                        noites e
+                                        turismo)
+                                    </p>
+                                    <div class="mb-3">
+                                        <label for="numPessoas1" class="form-label">Número de pessoas:</label>
+                                        <input type="number" class="form-control" id="numPessoas1"
+                                            placeholder="Digite o número de pessoas">
+                                        <label for="numDias1" class="form-label">Número de dias de hospedagem:</label>
+                                        <input type="number" class="form-control" id="numDias1"
+                                            placeholder="Digite o número de dias">
+                                    </div>
+                                    <a href="#" class="btn btn-primary">Reservar</a>
+                                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Jerusalém -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div id="carouselJerusalem" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="src/img/card-jerusalem/img1.jpg" class=" w-100"
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="src/img/card-jerusalem/img2.jpg" class=" w-100 "
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="src/img/card-jerusalem/img3.jpg" class=" w-100 "
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselJerusalem" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselJerusalem" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Jerusalém, Israel</h5>
+                                    <p class="card-text">
+                                        <b>Descrição:</b> Jerusalém é uma cidade sagrada com uma rica história que
+                                        remonta a
+                                        milhares de anos. É um destino de grande importância religiosa, onde Jesus
+                                        Cristo
+                                        pregou e foi crucificado. A cidade abriga locais históricos como a Igreja do
+                                        Santo
+                                        Sepulcro e a Cidade Velha.
+                                    </p><br>
+                                    <p><b>Valor:</b>R$ 2.000 por pessoa (passagem de ida e volta, hospedagem de 5 noites
+                                        e
+                                        turismo)</p>
+                                    <div class="mb-3">
+                                        <label for="numPessoas" class="form-label">Número de pessoas:</label>
+                                        <input type="number" class="form-control" id="numPessoas"
+                                            placeholder="Digite o número de pessoas">
+                                        <label for="numPessoas" class="form-label">Número de dias de hospedagem:</label>
+                                        <input type="number" class="form-control" id="numPessoas"
+                                            placeholder="Digite o número de dias">
+                                    </div>
+                                    <a href="#" class="btn btn-primary">Reservar</a>
+                                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Museu -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div id="carouselmuseu" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="src/img/card-museu/img1.jpg" class=" w-100"
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="src/img/card-museu/img2.jpg" class=" w-100 "
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="src/img/card-museu/img3.jpg" class=" w-100 "
+                                                style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselmuseu"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselmuseu"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Museu do Louvre, París, França</h5>
+                                    <p class="card-text"><b>Descrição:</b> O Museu do Louvre é um dos maiores e mais
+                                        famosos
+                                        museus do mundo, abrigando uma vasta coleção de arte, incluindo a Mona Lisa e a
+                                        Vênus de Milo. É um lugar onde a história da arte se encontra com a cultura
+                                        contemporânea.
+                                    </p><br><br>
+                                    <p><b>Valor:</b>R$ 1.375 por pessoa (passagem de ida e volta, hospedagem de 5 noites
+                                        e
+                                        turismo)
+                                    </p>
+                                    <div class="mb-3">
+                                        <label for="numPessoas" class="form-label">Número de pessoas:</label>
+                                        <input type="number" class="form-control" id="numPessoas"
+                                            placeholder="Digite o número de pessoas">
+                                        <label for="numPessoas" class="form-label">Número de dias de hospedagem:</label>
+                                        <input type="number" class="form-control" id="numPessoas"
+                                            placeholder="Digite o número de dias">
+                                    </div>
+                                    <a href="#" class="btn btn-primary">Reservar</a>
+                                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br><br>
+                <hr>
+                <br><br>
+                <div id="maritima" style="text-align: center; margin-top: 20px;">
+                    <h1
+                        style="color: #FFA500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Roboto', sans-serif; font-weight: bold;">
+                        "Descubra os Paraísos Marítimos"
+                    </h1><br>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <!-- Card 1: Ilha de Capri -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div id="carouselcapri" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="src/img/card-capri/img1.jpg" class=" w-100"
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="src/img/card-capri/img2.jpg" class=" w-100 "
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="src/img/card-capri/img3.jpg" class=" w-100 "
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselcapri" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselcapri" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ilha de Capri, Itália</h5>
+                                        <p class="card-text">
+                                            <b>Descrição:</b> Capri é uma ilha deslumbrante no Mar Tirreno, famosa por
+                                            suas
+                                            paisagens
+                                            naturais espetaculares, como a Gruta Azul e a Villa Jovis. A ilha oferece
+                                            uma
+                                            combinação
+                                            perfeita de beleza natural e história romana.
+                                        </p>
+                                        <br><br>
+                                        <p><b>Valor:</b> R$ 2.500 por pessoa (passagem de ida e volta, hospedagem de 5
+                                            noites e
+                                            turismo)
+                                        </p>
+                                        <div class="mb-3">
+                                            <label for="numPessoas1" class="form-label">Número de pessoas:</label>
+                                            <input type="number" class="form-control" id="numPessoas1"
+                                                placeholder="Digite o número de pessoas">
+                                            <label for="numDias1" class="form-label">Número de dias de
+                                                hospedagem:</label>
+                                            <input type="number" class="form-control" id="numDias1"
+                                                placeholder="Digite o número de dias">
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Reservar</a>
+                                        <a href="#" class="btn btn-secondary">Dúvidas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2: Ilha de Santorini, Grécia -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div id="carouselsantorini" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="src/img/card-santorini/img1.jpg" class=" w-100"
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="src/img/card-santorini/img2.jpg" class=" w-100 "
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="src/img/card-santorini/img3.jpg" class=" w-100 "
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselsantorini" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselsantorini" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ilha de Santorini, Grécia</h5>
+                                        <p class="card-text">
+                                            <b>Descrição:</b> Santorini é uma ilha grega conhecida por suas paisagens
+                                            deslumbrantes,
+                                            incluindo as casas brancas com telhados azuis e vistas panorâmicas do mar
+                                            Egeu.
+                                            É um
+                                            destino
+                                            perfeito para relaxar e desfrutar da natureza.
+                                        </p><br>
+                                        <p><b>Valor:</b>R$ 3.000 por pessoa (passagem de ida e volta, hospedagem de 5
+                                            noites
+                                            e
+                                            turismo)
+                                        </p>
+                                        <div class="mb-3">
+                                            <label for="numPessoas" class="form-label">Número de pessoas:</label>
+                                            <input type="number" class="form-control" id="numPessoas"
+                                                placeholder="Digite o número de pessoas">
+                                            <label for="numPessoas" class="form-label">Número de dias de
+                                                hospedagem:</label>
+                                            <input type="number" class="form-control" id="numPessoas"
+                                                placeholder="Digite o número de dias">
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Reservar</a>
+                                        <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3: Ilha de Bali, Indonésia -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div id="carouselbali" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="src/img/card-bali/img1.jpg" class=" w-100"
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="src/img/card-bali/img2.jpg" class=" w-100 "
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="src/img/card-bali/img3.jpg" class=" w-100 "
+                                                    style="height: 250px; object-fit: cover;" alt="Acrópole de Atenas">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselbali" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselbali" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ilha de Bali, Indonésia</h5>
+                                        <p class="card-text"><b>Descrição:</b> Bali é uma ilha tropical no Mar de Bali,
+                                            famosa
+                                            por suas
+                                            praias paradisíacas, templos hindus e vida noturna vibrante. É um destino
+                                            popular
+                                            para
+                                            turistas que buscam relaxamento e aventura.
+                                        </p><br><br>
+                                        <p><b>Valor:</b>R$ 2.800 por pessoa (passagem de ida e volta, hospedagem de 5
+                                            noites
+                                            e
+                                            turismo)</p>
+                                        <div class="mb-3">
+                                            <label for="numPessoas" class="form-label">Número de pessoas:</label>
+                                            <input type="number" class="form-control" id="numPessoas"
+                                                placeholder="Digite o número de pessoas">
+                                            <label for="numPessoas" class="form-label">Número de dias de
+                                                hospedagem:</label>
+                                            <input type="number" class="form-control" id="numPessoas"
+                                                placeholder="Digite o número de dias">
+                                        </div>
+                                        <a href="#" class="btn btn-primary">Reservar</a>
+                                        <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br><br>
+                    <hr>
+                    <br><br>
+                    <div id="fauna" style="text-align: center; margin-top: 20px;">
+                        <h1
+                            style="color: #FFA500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Roboto', sans-serif; font-weight: bold;">
+                            "Explore a Beleza da Fauna e Natureza"
+                        </h1><br>
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <!-- serengeti -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div id="serengeti" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="src/img/card-tanzania/img1.jpg" class=" w-100"
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="src/img/card-tanzania/img2.jpg" class=" w-100 "
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="src/img/card-tanzania/img3.jpg" class=" w-100 "
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#serengeti" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#serengeti" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Safari no Parque Nacional de Serengeti, Tanzânia</h5>
+                                            <p class="card-text">
+                                                <b>Descrição:</b> O Parque Nacional de Serengeti é famoso pela Grande
+                                                Migração,
+                                                onde milhões de gnus, zebras e antílopes migram em busca de pastos
+                                                frescos.
+                                                É um
+                                                destino perfeito para avistar os "Big Five" (leão, leopardo,
+                                                rinoceronte,
+                                                elefante e búfalo africano) em seu habitat natural
+                                            </p>
+                                            <br>
+                                            <p><b>Valor:</b> R$ 4.500 por pessoa (passagem de ida e volta, hospedagem de
+                                                7
+                                                noites e safári guiado)
+                                            </p>
+                                            <div class="mb-3">
+                                                <label for="numPessoas1" class="form-label">Número de pessoas:</label>
+                                                <input type="number" class="form-control" id="numPessoas1"
+                                                    placeholder="Digite o número de pessoas">
+                                                <label for="numDias1" class="form-label">Número de dias de
+                                                    hospedagem:</label>
+                                                <input type="number" class="form-control" id="numDias1"
+                                                    placeholder="Digite o número de dias">
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Reservar</a>
+                                            <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Corbett -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div id="Corbett" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="src/img/card-corbett/img1.jpg" class=" w-100"
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="src/img/card-corbett/img2.jpg" class=" w-100 "
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="src/img/card-corbett/img3.jpg" class=" w-100 "
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#Corbett" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#Corbett" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Safari no Parque Nacional de Jim Corbett, Índia</h5>
+                                            <p class="card-text">
+                                                <b>Descrição:</b> O Parque Nacional de Jim Corbett é um dos melhores
+                                                lugares
+                                                para avistar o tigre-de-bengala em seu habitat natural. Além dos tigres,
+                                                você
+                                                pode encontrar elefantes, leopardos e uma variedade de aves e vida
+                                                selvagem.
+                                            </p><br><br>
+                                            <p><b>Valor:</b>R$ 3.800 por pessoa (passagem de ida e volta, hospedagem de
+                                                7
+                                                noites
+                                                e safári guiado)
+                                            </p>
+                                            <div class="mb-3">
+                                                <label for="numPessoas" class="form-label">Número de pessoas:</label>
+                                                <input type="number" class="form-control" id="numPessoas"
+                                                    placeholder="Digite o número de pessoas">
+                                                <label for="numPessoas" class="form-label">Número de dias de
+                                                    hospedagem:</label>
+                                                <input type="number" class="form-control" id="numPessoas"
+                                                    placeholder="Digite o número de dias">
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Reservar</a>
+                                            <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Masai -->
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div id="Masai" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="src/img/card-quenia/img1.jpg" class=" w-100"
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="src/img/card-quenia/img2.jpg" class=" w-100 "
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="src/img/card-quenia/img3.jpg" class=" w-100 "
+                                                        style="height: 250px; object-fit: cover;"
+                                                        alt="Acrópole de Atenas">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#Masai"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#Masai"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Safari no Parque Nacional de Masai Mara, Quênia</h5>
+                                            <p class="card-text"><b>Descrição:</b> O Parque Nacional de Masai Mara é
+                                                conhecido
+                                                por suas vastas savanas e pela Grande Migração. É um dos melhores
+                                                lugares do
+                                                mundo para ver a vida selvagem africana, incluindo leões, leopardos,
+                                                chitas
+                                                e
+                                                uma grande variedade de antílopes.
+                                            </p><br><br>
+                                            <p><b>Valor:</b>R$ 4.200 por pessoa (passagem de ida e volta, hospedagem de
+                                                7
+                                                noites
+                                                e safári guiado)</p>
+                                            <div class="mb-3">
+                                                <label for="numPessoas" class="form-label">Número de pessoas:</label>
+                                                <input type="number" class="form-control" id="numPessoas"
+                                                    placeholder="Digite o número de pessoas">
+                                                <label for="numPessoas" class="form-label">Número de dias de
+                                                    hospedagem:</label>
+                                                <input type="number" class="form-control" id="numPessoas"
+                                                    placeholder="Digite o número de dias">
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Reservar</a>
+                                            <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <hr>
+                        <br><br>
+                        <div id="cruzeiro" style="text-align: center; margin-top: 20px;">
+                            <h1
+                                style="color: #FFA500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Roboto', sans-serif; font-weight: bold;">
+                                "Navegue pelos Mares: Experiências de Cruzeiros Inesquecíveis"
+                            </h1><br>
+                            <br>
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Mediterrâneo -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div id="Mediterrâneo" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="src/img/card-cruzeiros/img1.jpg" class=" w-100"
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="src/img/card-cruzeiros/img2.jpg" class=" w-100 "
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="src/img/card-cruzeiros/img3.jpg" class=" w-100 "
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#Mediterrâneo" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#Mediterrâneo" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Cruzeiro pelo Mediterrâneo</h5>
+                                                <p class="card-text">
+                                                    <b>Descrição:</b> Explore as maravilhas do Mediterrâneo com paradas
+                                                    em
+                                                    destinos icônicos como Barcelona, Roma, Atenas e as ilhas gregas.
+                                                    Desfrute de luxo a bordo com refeições gourmet, entretenimento ao
+                                                    vivo e atividades recreativas.
+                                                </p>
+                                                <br>
+                                                <p><b>Valor:</b>R$ 7.500 por pessoa (passagem de ida e volta, hospedagem
+                                                    de
+                                                    7
+                                                    noites a bordo e excursões)
+                                                </p>
+                                                <div class="mb-3">
+                                                    <label for="numPessoas1" class="form-label">Número de
+                                                        pessoas:</label>
+                                                    <input type="number" class="form-control" id="numPessoas1"
+                                                        placeholder="Digite o número de pessoas">
+                                                    <label for="numDias1" class="form-label">Número de dias de
+                                                        hospedagem:</label>
+                                                    <input type="number" class="form-control" id="numDias1"
+                                                        placeholder="Digite o número de dias">
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Reservar</a>
+                                                <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 2: Caribe-->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div id="Caribe" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="src/img/card-cruzeiros/img4.jpg" class=" w-100"
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="src/img/card-cruzeiros/img5.jpg" class=" w-100 "
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="src/img/card-cruzeiros/img6.jpg" class=" w-100 "
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#Caribe" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#Caribe" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Cruzeiro pelo Caribe</h5>
+                                                <p class="card-text">
+                                                    <b>Descrição:</b> Navegue pelas águas cristalinas do Caribe,
+                                                    visitando
+                                                    destinos paradisíacos como Bahamas, Jamaica e Cozumel. Relaxe nas
+                                                    praias
+                                                    de
+                                                    areia branca, mergulhe em recifes de corais e aproveite o clima
+                                                    tropical.
+
+                                                </p><br><br>
+                                                <p><b>Valor:</b>R$ 6.800 por pessoa (passagem de ida e volta, hospedagem
+                                                    de
+                                                    7
+                                                    noites a bordo e excursões)
+                                                </p>
+                                                <div class="mb-3">
+                                                    <label for="numPessoas" class="form-label">Número de
+                                                        pessoas:</label>
+                                                    <input type="number" class="form-control" id="numPessoas"
+                                                        placeholder="Digite o número de pessoas">
+                                                    <label for="numPessoas" class="form-label">Número de dias de
+                                                        hospedagem:</label>
+                                                    <input type="number" class="form-control" id="numPessoas"
+                                                        placeholder="Digite o número de dias">
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Reservar</a>
+                                                <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 3: Alasca -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div id="Alasca" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="src/img/card-cruzeiros/img7.jpg" class=" w-100"
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="src/img/card-cruzeiros/img8.jpg" class=" w-100 "
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="src/img/card-cruzeiros/img9.jpg" class=" w-100 "
+                                                            style="height: 250px; object-fit: cover;"
+                                                            alt="Acrópole de Atenas">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#Alasca" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#Alasca" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Cruzeiro pelo Alasca</h5>
+                                                <p class="card-text"><b>Descrição:</b> Descubra a majestosa paisagem do
+                                                    Alasca
+                                                    com suas geleiras imponentes, montanhas cobertas de neve e vida
+                                                    selvagem
+                                                    abundante. As excursões incluem passeios de helicóptero, trilhas e
+                                                    observação de baleias.
+                                                </p><br><br>
+                                                <p><b>Valor:</b>R$ 8.200 por pessoa (passagem de ida e volta, hospedagem
+                                                    de
+                                                    7
+                                                    noites a bordo e excursões)</p>
+                                                <div class="mb-3">
+                                                    <label for="numPessoas" class="form-label">Número de
+                                                        pessoas:</label>
+                                                    <input type="number" class="form-control" id="numPessoas"
+                                                        placeholder="Digite o número de pessoas">
+                                                    <label for="numPessoas" class="form-label">Número de dias de
+                                                        hospedagem:</label>
+                                                    <input type="number" class="form-control" id="numPessoas"
+                                                        placeholder="Digite o número de dias">
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Reservar</a>
+                                                <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <hr>
+                            <br><br>
+                            <div id="nacionais" style="text-align: center; margin-top: 20px;">
+                                <h1
+                                    style="color: #FFA500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Roboto', sans-serif; font-weight: bold;">
+                                    "Descubra o Brasil: Viagens Inesquecíveis" </h1><br>
+                                <br>
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- Salvador -->
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <div id="Salvador" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="src/img/nacionais/salvador1.jpg" class=" w-100"
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="src/img/nacionais/salvador2.jpg" class=" w-100 "
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="src/img/nacionais/salvador3.jpg" class=" w-100 "
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button"
+                                                        data-bs-target="#Salvador" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button"
+                                                        data-bs-target="#Salvador" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Salvador, Bahia</h5>
+                                                    <p class="card-text">
+                                                        <b>Descrição:</b> Salvador é conhecida por sua rica cultura
+                                                        afro-brasileira, música, danças e festivais culturais. O famoso
+                                                        Pelourinho, suas praias deslumbrantes e a mistura de arquitetura
+                                                        colonial e moderna oferecem uma fusão de história e charme
+                                                        autêntico.
+                                                    </p>
+                                                    <br><br>
+                                                    <p><b>Valor:</b>R$ 2.500 por pessoa (passagem de ida e volta,
+                                                        hospedagem
+                                                        de
+                                                        5 noites e turismo)
+                                                    </p>
+                                                    <div class="mb-3">
+                                                        <label for="numPessoas1" class="form-label">Número de
+                                                            pessoas:</label>
+                                                        <input type="number" class="form-control" id="numPessoas1"
+                                                            placeholder="Digite o número de pessoas">
+                                                        <label for="numDias1" class="form-label">Número de dias de
+                                                            hospedagem:</label>
+                                                        <input type="number" class="form-control" id="numDias1"
+                                                            placeholder="Digite o número de dias">
+                                                    </div>
+                                                    <a href="#" class="btn btn-primary">Reservar</a>
+                                                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Card 2: Fernando de noronha -->
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <div id="Noronha" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="src/img/nacionais/noronha1.jpg" class=" w-100"
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="src/img/nacionais/noronha2.jpg" class=" w-100 "
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="src/img/nacionais/noronha3.jpg" class=" w-100 "
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button"
+                                                        data-bs-target="#Noronha" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button"
+                                                        data-bs-target="#Noronha" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fernando de Noronha, Pernambuco</h5>
+                                                    <p class="card-text">
+                                                        <b>Descrição:</b> Patrimônio Mundial da UNESCO, o arquipélago é
+                                                        um
+                                                        refúgio para o ecoturismo, snorkeling, mergulho e observação da
+                                                        vida
+                                                        selvagem. Fernando de Noronha é famosa por suas águas
+                                                        cristalinas,
+                                                        vida
+                                                        marinha, praias intocadas e paisagens impressionantes.
+
+                                                    </p>
+                                                    <p><b>Valor:</b>R$ 3.000 por pessoa (passagem de ida e volta,
+                                                        hospedagem
+                                                        de
+                                                        5 noites e turismo)
+                                                    </p>
+                                                    <div class="mb-3">
+                                                        <label for="numPessoas" class="form-label">Número de
+                                                            pessoas:</label>
+                                                        <input type="number" class="form-control" id="numPessoas"
+                                                            placeholder="Digite o número de pessoas">
+                                                        <label for="numPessoas" class="form-label">Número de dias de
+                                                            hospedagem:</label>
+                                                        <input type="number" class="form-control" id="numPessoas"
+                                                            placeholder="Digite o número de dias">
+                                                    </div>
+                                                    <a href="#" class="btn btn-primary">Reservar</a>
+                                                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Card 3: Rio de Janeiro, RJ -->
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <div id="Janeiro" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="src/img/nacionais/rj1.jpg" class=" w-100"
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="src/img/nacionais/rj2.jpg" class=" w-100 "
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="src/img/nacionais/rj3.jpg" class=" w-100 "
+                                                                style="height: 250px; object-fit: cover;"
+                                                                alt="Acrópole de Atenas">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev" type="button"
+                                                        data-bs-target="#Janeiro" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next" type="button"
+                                                        data-bs-target="#Janeiro" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Rio de Janeiro, RJ</h5>
+                                                    <p class="card-text"><b>Descrição:</b> Conhecida como a Cidade
+                                                        Maravilhosa,
+                                                        o
+                                                        Rio de Janeiro é famosa por suas praias e monumentos icônicos
+                                                        como o
+                                                        Cristo Redentor e o Pão de Açúcar. Além das belezas naturais, a
+                                                        cidade
+                                                        oferece uma rica cena cultural e gastronômica.
+                                                    </p><br><br>
+                                                    <p><b>Valor:</b>R$ 2.800 por pessoa (passagem de ida e volta,
+                                                        hospedagem
+                                                        de
+                                                        5 noites e turismo)</p>
+                                                    <div class="mb-3">
+                                                        <label for="numPessoas" class="form-label">Número de
+                                                            pessoas:</label>
+                                                        <input type="number" class="form-control" id="numPessoas"
+                                                            placeholder="Digite o número de pessoas">
+                                                        <label for="numPessoas" class="form-label">Número de dias de
+                                                            hospedagem:</label>
+                                                        <input type="number" class="form-control" id="numPessoas"
+                                                            placeholder="Digite o número de dias">
+                                                    </div>
+                                                    <a href="#" class="btn btn-primary">Reservar</a>
+                                                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <hr>
+                                <br><br>
+                                <div id="internacionais" style="text-align: center; margin-top: 20px;">
+                                    <h1
+                                        style="color: #FFA500; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Roboto', sans-serif; font-weight: bold;">
+                                        "Aventuras pelo Mundo: Viagens Internacionais Inesquecíveis"
+                                    </h1><br>
+                                    <br>
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- Paris e Londres - Explorando a História -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div id="Paris" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="src/img/internacionais/int1.jpg"
+                                                                    class=" w-100"
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="src/img/internacionais/int2.jpg"
+                                                                    class=" w-100 "
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="src/img/internacionais/int3.jpg"
+                                                                    class=" w-100 "
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#Paris" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#Paris" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Paris e Londres - Explorando a História e
+                                                            a
+                                                            Cultura</h5>
+                                                        <p class="card-text">
+                                                            <b>Descrição:</b> Descubra o charme das capitais da França e
+                                                            do
+                                                            Reino Unido. Visite ícones como a Torre Eiffel, o Museu do
+                                                            Louvre, o
+                                                            Big Ben e o Palácio de Buckingham. Esta viagem oferece uma
+                                                            mistura
+                                                            perfeita de arte, história e cultura.
+                                                        </p>
+                                                        <br>
+                                                        <p><b>Valor:</b> R$ 6.500 por pessoa (passagem de ida e volta,
+                                                            hospedagem de 7 noites e turismo guiado)
+                                                        </p>
+                                                        <div class="mb-3">
+                                                            <label for="numPessoas1" class="form-label">Número de
+                                                                pessoas:</label>
+                                                            <input type="number" class="form-control" id="numPessoas1"
+                                                                placeholder="Digite o número de pessoas">
+                                                            <label for="numDias1" class="form-label">Número de dias de
+                                                                hospedagem:</label>
+                                                            <input type="number" class="form-control" id="numDias1"
+                                                                placeholder="Digite o número de dias">
+                                                        </div>
+                                                        <a href="#" class="btn btn-primary">Reservar</a>
+                                                        <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Nova York e Washington D.C. - O Coração da América -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div id="Washington" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="src/img/internacionais/int4.jpg"
+                                                                    class=" w-100"
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="src/img/internacionais/int5.jpg"
+                                                                    class=" w-100 "
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="src/img/internacionais/int6.jpg"
+                                                                    class=" w-100 "
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#Washington" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#Washington" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Nova York e Washington D.C. - O Coração
+                                                            da
+                                                            América</h5>
+                                                        <p class="card-text">
+                                                            <b>Descrição:</b> Explore a vibrante cidade de Nova York,
+                                                            com
+                                                            suas
+                                                            famosas atrações como a Estátua da Liberdade e a Times
+                                                            Square.
+                                                            Em
+                                                            seguida, visite Washington D.C. e seus monumentos
+                                                            históricos,
+                                                            incluindo a Casa Branca e o Capitólio.
+                                                        </p><br>
+                                                        <p><b>Valor:</b>R$ 7.200 por pessoa (passagem de ida e volta,
+                                                            hospedagem
+                                                            de 7 noites e turismo guiado)</p>
+                                                        <div class="mb-3">
+                                                            <label for="numPessoas" class="form-label">Número de
+                                                                pessoas:</label>
+                                                            <input type="number" class="form-control" id="numPessoas"
+                                                                placeholder="Digite o número de pessoas">
+                                                            <label for="numPessoas" class="form-label">Número de dias de
+                                                                hospedagem:</label>
+                                                            <input type="number" class="form-control" id="numPessoas"
+                                                                placeholder="Digite o número de dias">
+                                                        </div>
+                                                        <a href="#" class="btn btn-primary">Reservar</a>
+                                                        <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Tóquio e Quioto - A Magia do Japão -->
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <div id="Quioto" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="src/img/internacionais/int7.jpg"
+                                                                    class=" w-100"
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="src/img/internacionais/int8.jpg"
+                                                                    class=" w-100 "
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="src/img/internacionais/int9.jpg"
+                                                                    class=" w-100 "
+                                                                    style="height: 250px; object-fit: cover;"
+                                                                    alt="Acrópole de Atenas">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#Quioto" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#Quioto" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Tóquio e Quioto - A Magia do Japão</h5>
+                                                        <p class="card-text"><b>Descrição:</b> Experimente o contraste
+                                                            entre
+                                                            a
+                                                            modernidade de Tóquio e a tradição de Quioto. Visite o
+                                                            Templo
+                                                            Senso-ji, a Torre de Tóquio, os templos de Quioto e desfrute
+                                                            da
+                                                            culinária japonesa autêntica.
+
+                                                        </p><br><br>
+                                                        <p><b>Valor:</b>R$ 8.000 por pessoa (passagem de ida e volta,
+                                                            hospedagem de 7 noites e turismo guiado)
+                                                        </p>
+                                                        <div class="mb-3">
+                                                            <label for="numPessoas" class="form-label">Número de
+                                                                pessoas:</label>
+                                                            <input type="number" class="form-control" id="numPessoas"
+                                                                placeholder="Digite o número de pessoas">
+                                                            <label for="numPessoas" class="form-label">Número de dias de
+                                                                hospedagem:</label>
+                                                            <input type="number" class="form-control" id="numPessoas"
+                                                                placeholder="Digite o número de dias">
+                                                        </div>
+                                                        <a href="#" class="btn btn-primary">Reservar</a>
+                                                        <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        </section>
+        <br><br>
+        <hr>
+        <br><br>
+        <h1 style="text-align: center; color: #d9534f; font-size: 32px; font-weight: bold; margin-bottom: 20px;">
+            Promoções Personalizadas
+        </h1>
+        <div class="container w-100" id="promocoes-personalizadas">
+
+
+            <!-- Promoção para Número de Pessoas -->
+            <div class="card" style="margin: 20px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #d9534f; font-weight: bold;">Promoção
+                        para Grupos - Desconto Progressivo!</h5>
+                    <p class="card-text">
+                        <b>Descrição:</b> Aproveite nossa promoção para viagens em grupo! Quanto
+                        maior o grupo, maior o desconto. Ideal para famílias, amigos e eventos
+                        corporativos. Descontos válidos para todos os destinos disponíveis.
+                    </p>
+                    <p><b>Desconto:</b> Até 20% de desconto para grupos de 5 ou mais pessoas.
+                    </p>
+                    <div class="mb-3">
+                        <label for="numPessoasPromocaoGrupo" class="form-label">Número de
+                            pessoas:</label>
+                        <input type="number" class="form-control" id="numPessoasPromocaoGrupo"
+                            placeholder="Digite o número de pessoas">
+                    </div>
+                    <a href="#" class="btn btn-primary">Reservar</a>
+                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                </div>
+            </div>
+            <br>
+
+            <!-- Promoção para Hotéis -->
+            <div class="card" style="margin: 20px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #d9534f; font-weight: bold;">Promoção
+                        de Hotéis Parceiros - Até 25% OFF!</h5>
+                    <p class="card-text">
+                        <b>Descrição:</b> Hospede-se nos melhores hotéis com descontos
+                        exclusivos. Nossos hotéis parceiros oferecem conforto, luxo e
+                        localização privilegiada. Promoção válida para reservas em diversos
+                        destinos.
+                    </p>
+                    <p><b>Desconto:</b> Até 25% de desconto em reservas de hotéis parceiros.</p>
+                    <div class="mb-3">
+                        <label for="numDiasPromocaoHotel" class="form-label">Número de dias de
+                            hospedagem:</label>
+                        <input type="number" class="form-control" id="numDiasPromocaoHotel"
+                            placeholder="Digite o número de dias">
+                    </div>
+                    <a href="#" class="btn btn-primary">Reservar</a>
+                    <a href="#contato class=" btn btn-secondary">Dúvidas</a>
+                </div>
+            </div>
+            <br>
+
+            <!-- Promoção para Aniversário de Casamento -->
+            <div class="card" style="margin: 20px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #d9534f; font-weight: bold;">Especial
+                        Aniversário de Casamento - Pacote Romântico!</h5>
+                    <p class="card-text">
+                        <b>Descrição:</b> Comemore seu aniversário de casamento em grande estilo
+                        com nosso pacote romântico. Inclui estadia em hotéis de luxo, jantar à
+                        luz de velas e atividades exclusivas para casais.
+                    </p>
+                    <p><b>Valor Promocional:</b> R$ 4.000 por casal (passagem de ida e volta,
+                        hospedagem de 5 noites e experiências românticas)</p>
+                    <div class="mb-3">
+                        <label for="numCasalPromocao" class="form-label">Número de
+                            casais:</label>
+                        <input type="number" class="form-control" id="numCasalPromocao"
+                            placeholder="Digite o número de casais">
+                        <label for="numDiasPromocaoCasamento" class="form-label">Número de dias
+                            de hospedagem:</label>
+                        <input type="number" class="form-control" id="numDiasPromocaoCasamento"
+                            placeholder="Digite o número de dias">
+                    </div>
+                    <a href="#" class="btn btn-primary">Reservar</a>
+                    <a href="#contato" class="btn btn-secondary">Dúvidas</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <hr>
+    <br><br>
+    <div class="container" id="contato" style="background-color: #ffffff; border-radius: 20px;padding: 10px;">
+        <h1 style="text-align: center; color:  #FFA500; font-size: 32px; font-weight: bold; margin-bottom: 20px;">
+            Entre em Contato
+        </h1>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label"><b>Nome:</b></label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label"><b>Email:</b></label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+                <label for="destino" class="form-label"><b>Destino de Interesse:</b></label>
+                <input type="text" class="form-control" id="destino" placeholder="Digite o destino de interesse">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label"><b>Telefone de Contato:</b></label>
+                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label"><b>Mensagem:</b></label>
+                <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+    <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" id="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="60px"
+            height="60px">
+    </a>
+    <footer style="background-color: #343a40; color: #ffffff; padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <!-- Seção de Parceiros -->
+                <div class="col-md-6">
+                    <h5>Parceiros</h5>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><img src="src/img/gol-logo.jpg" alt="Gol" style="width: 50px; margin-right: 10px;">Gol
+                            Linhas Aéreas</li>
+                        <br>
+                        <li><img src="src/img/latam-logo.jpg" alt="LATAM Airlines"
+                                style="width: 50px; margin-right: 10px;">LATAM Airlines</li>
+                    </ul>
+                </div>
+
+                <!-- Seção de Formas de Pagamento -->
+                <div class="col-md-6">
+                    <h5>Formas de Pagamento</h5>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                                alt="Mastercard" style="width: 50px; margin-right: 10px;">Mastercard</li>
+                        <li><img src="src/img/internacionais/logo-visa-4096.png" alt="Visa"
+                                style="width: 50px; margin-right: 10px;">Visa</li>
+                    </ul>
+                </div>
+
+                <!-- Seção de Informações -->
+
+            </div>
+            <div class="text-center" style="margin-top: 20px;">
+                <p>© 2025 ViaBello - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Script para caixa interna de login para área de clientes -->
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function () {
+            var loginFields = document.getElementById('loginFields');
+            if (loginFields.style.display === 'none') {
+                loginFields.style.display = 'block';
+            } else {
+                loginFields.style.display = 'none';
+            }
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

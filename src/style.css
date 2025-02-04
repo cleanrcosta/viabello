@@ -1,0 +1,218 @@
+
+
+/* CABECALHO */
+.navbar {
+    background-color: #ffffff3b; /* Fundo transparente */
+  }
+  .carousel-container {
+    max-height: 700px; /* Ajuste o tamanho conforme necessário */
+    margin: 0 auto; /* Centraliza o carrossel */
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+
+
+/* CSS para imagem */
+.figure-img {
+  transition: opacity 0.5s ease;
+}
+
+.figure-img.hover-effect:hover {
+  opacity: 0.5;
+}
+
+/* CSS para overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #80808073; /* Cinza transparente */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.figure:hover .overlay {
+  opacity: 1;
+}
+
+/* Estilos adicionais, se necessário */
+.login-fields {
+  margin-top: 10px;
+}
+/* Estilos adicionais */
+.btn-highlight {
+  background-color: #FFA500; /* Laranja brilhante */
+  color: white;
+  border: none;
+}
+
+.btn-highlight:hover {
+  background-color: #FF8C00; /* Laranja escuro no hover */
+}
+
+/* Estilos para campos de login */
+.login-fields {
+  margin-top: 10px;
+}
+/* Efeito de transição suave logo */
+.navbar-toggler {
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Ampliação ao passar o mouse  logo*/
+.navbar-toggler a:hover {
+  transform: scale(1.5); /* Aumenta o botão em 20% */
+}
+.navbar-brand img {
+  width: 100x;
+  height: 100px;
+  transition: transform 0.8s ease;
+  border-radius: 20px;
+
+}
+
+.navbar-brand:hover {
+  transform: scale(1.15);
+  border: 2px solid orange;
+
+}
+
+.navbar-brand {
+  transition: transform 0.8s ease;
+  border-radius: 20px;
+  margin-left: 35px;
+}
+
+
+
+
+
+/* Efeito de hover */
+.nav-link:hover {
+  color: #FF8C00; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Sublinhado */
+  text-shadow: none; /* Remove a sombra ao passar o mouse */
+}
+
+
+/* Efeito de hover */
+.nav-link:hover {
+  color: #FF8C00; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Sublinhado */
+  text-shadow: none; /* Remove a sombra ao passar o mouse */
+}
+/* Estilo para aumentar o espaço entre os links */
+.nav-item {
+  margin-right: 15px; /* Aumenta o espaçamento à direita de cada link */
+
+}
+
+.navbar-nav .nav-link {
+  color: #FFA500; /* Cor destacada */
+  text-shadow: 1px 1px 5px rgb(228, 228, 228); /* Sombra */
+  transition: color 0.3s ease, text-shadow 0.3s ease, text-decoration 0.3s ease; /* Suavidade nos efeitos */
+  font-size: 25px; /* Tamanho da fonte aumentado */
+  font-family: 'Roboto', sans-serif; /* Fonte Roboto do Google Fonts */
+  font-weight: bold; /* Negrito */
+}
+
+/* Efeito de hover */
+.navbar-nav .nav-link:hover {
+  color: #FF8C00; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Sublinhado */
+  text-shadow: none; /* Remove a sombra ao passar o mouse */
+}
+/* Centralizar o conteúdo da navbar */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  width: 100%;
+}
+
+/* Opcional: Remover o alinhamento automático à esquerda */
+.me-auto {
+  margin-left: auto;
+  
+}
+
+/* Configuraçoes do carousel para os cards */
+
+.carousel-container {
+  position: relative;
+}
+.carousel-control-prev-second,
+.carousel-control-next-second {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  background-color: wheat;
+  border-radius: 50%;
+  border: 0px;
+}
+.carousel-control-prev-second {
+  left: -5%;
+}
+.carousel-control-next-second {
+  right: -5%;
+}
+
+/* Estilo para o campo de entrada */
+.card .form-control {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+ /*  |CARDS */
+  .card-custom {
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .carousel-inner-card img {
+    height: 700px;
+    object-fit: cover;
+  }
+@media (max-width: 900px){
+.carousel-inner .row {
+  gap: 15px;
+}
+}
+
+@media (min-width: 900px){
+  #promocoes-personalizadas {
+    display: flex;
+  }
+  }
+
+  @media (min-width: 900px){
+    #contato {
+      width: 50vh;
+    }
+    }
+    #whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+  }
