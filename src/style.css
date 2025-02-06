@@ -81,25 +81,40 @@
   transform: scale(1.5); /* Aumenta o botão em 20% */
 }
 .navbar-brand img {
-  width: 75px;
-  height: 50px;
+  width: 215px;
+  height: 40px;
   transition: transform 0.8s ease;
   border-radius: 20px;
+  border: 1px solid orange;
 
 }
 
 .navbar-brand:hover {
-  transform: scale(1.15);
-  border: 2px solid orange;
-
+  transform: scale(1.13);
 }
+
+
 
 .navbar-brand {
   transition: transform 0.8s ease;
   border-radius: 20px;
-  margin-left: 35px;
+  margin-left: 5px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+
 }
 
+@media (min-width: 900px){
+ 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+  }
+}
 
 
 
@@ -117,6 +132,8 @@
   color: #FF8C00; /* Cor ao passar o mouse */
   text-decoration: underline; /* Sublinhado */
   text-shadow: none; /* Remove a sombra ao passar o mouse */
+  transform: scale(1.15);
+  transition: transform 0.8s ease;
 }
 /* Estilo para aumentar o espaço entre os links */
 .nav-item {
@@ -128,9 +145,10 @@
   color: #FFA500; /* Cor destacada */
   text-shadow: 4px 4px 10px #000000; /* Sombra */
   transition: color 0.3s ease, text-shadow 0.3s ease, text-decoration 0.3s ease; /* Suavidade nos efeitos */
-  font-size: 18px; /* Tamanho da fonte aumentado */
+  font-size: 16px; /* Tamanho da fonte aumentado */
   font-family: 'Roboto', sans-serif; /* Fonte Roboto do Google Fonts */
   font-weight: bold; /* Negrito */
+
 }
 
 /* Efeito de hover */
@@ -181,7 +199,20 @@
 
 
 
+.card-body{
+  background-color: #326161c9;
+  color: whitesmoke;
+  
 
+}
+#promocoes-personalizadas .card-body{
+  background-color: hsla(0, 0%, 0%, 0.788);
+
+}
+h1{
+  text-shadow: 4px 4px 10px #000000;
+
+}
 
  /*  |CARDS */
   .card-custom {
